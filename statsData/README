@@ -1,0 +1,11 @@
+retry$i.dat contains avg. retry rate when moved at speed $i, for varying lookaround rates(col 1)
+
+stats$i.dat contains mean delay(col 2), standard deviation(col 3) in delay when moved at speed $i, for varying lookaround rates(col 1)
+
+folder data - $i-$j.dat
+moved at speed $j, look around rate is $i
+column 1 - time at which packet is received
+column 2 - number of retries
+
+folder meanData - mean-$i-$j.dat
+moved at speed $j, look around rate is $i
