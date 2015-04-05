@@ -211,7 +211,7 @@ main (int argc, char *argv[])
   
   NetDeviceContainer apContainer = wifiHelper.Install(wifiPhyHelper, wifiMacHelper, ap);
   
-  
+  /*
   // Changing the Look Around Rate
   Ptr<WifiRemoteStationManager> apStation =
               DynamicCast<WifiNetDevice>(apContainer.Get (0))->GetRemoteStationManager ();
@@ -224,7 +224,7 @@ main (int argc, char *argv[])
   DoubleValue LARate;
   apStation->GetAttribute("LookAroundRate", LARate);
   //cout << "LookAroundRate " << LARate.Get() << endl;
-  
+  */
 
 //
 // Install the internet stack on the nodes
@@ -327,7 +327,7 @@ main (int argc, char *argv[])
 
 
   //std::cout << "Total Bytes Received: " << sink1->GetTotalRx () << std::endl;
-  std::cout << (sink1->GetTotalRx ()*8)/(1000000*SimTime) << std::endl;
-  std::cout << final << endl;
+  //std::cout << (sink1->GetTotalRx ()*8)/(1000000*SimTime) << std::endl;
+  //std::cout << final << endl;
 
 }
